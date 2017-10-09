@@ -58,5 +58,5 @@ class OrderedMap<K, V> implements IMap<K, V> {
     public inline function exists(key)         return map.exists(key);
     public inline function get(key)            return map.get(key);
     public inline function keys()              return _keys.iterator();
-
+    public inline function copy()              return cast map.copy();
 } //OrderedMap
